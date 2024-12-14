@@ -8,8 +8,8 @@ commonLabels:
 nameSuffix: -dev
 
 patches:
-  - path: ../../../base/deployment.yaml
-  - path: ../../../base/service.yaml
+  - path: ../../base/deployment.yaml
+  - path: ../../base/service.yaml
 
 resources:
-  - ../../../base
+  - ../../base
