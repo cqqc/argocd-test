@@ -7,8 +7,8 @@ commonLabels:
 nameSuffix: -dev
 
 patches:
-- ./deployment.yaml
-- ./service.yaml
+  - path: ./deployment.yaml
+  - path: ./service.yaml
 
 images:
 - name: argocd-test-app
