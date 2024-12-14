@@ -3,9 +3,9 @@ kind: Kustomization
 
 namespace: argocd
 
-commonLabels:
-  app: argocd-test-app-dev
-nameSuffix: -dev
+metadata:
+  labels:
+    app: argocd-test-app-dev
 
 patches:
   - path: ../../base/deployment.yaml
