@@ -7,9 +7,11 @@ metadata:
   labels:
     app: argocd-test-app-dev
 
-patches:
-  - path: ../../base/deployment.yaml
-  - path: ../../base/service.yaml
-
 resources:
   - ../../base
+
+patches:
+  - path: deployment.yaml
+  - path: service.yaml
+
+
