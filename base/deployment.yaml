@@ -2,17 +2,19 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: argocd-test-app-deployment
+  labels:
+    app: app
 spec:
   strategy: # 올바른 필드
     type: RollingUpdate
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: argocd-test-app
   template:
     spec:
       containers:
-      - name: argocd-test-app
-        image: argocd-test-app
+      - name: nginx
+        image: nginx:1.14.2
         ports:
         - containerPort: 80

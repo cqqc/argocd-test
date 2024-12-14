@@ -1,6 +1,4 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: argocd-test-app-deployment
-spec:
-  replicas: 1
+  name: argocd-test-app-deployment-hmc
