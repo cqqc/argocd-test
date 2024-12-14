@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: argocd-test-app-deployment
-  labels:
-    app: app
 spec:
   strategy: # 올바른 필드
     type: RollingUpdate
