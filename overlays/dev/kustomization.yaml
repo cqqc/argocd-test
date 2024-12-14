@@ -5,7 +5,7 @@ namespace: argocd
 
 metadata:
   labels:
-    app: argocd-test-app-dev
+    app: argocd-test-app
 
 resources:
   - ../../base
