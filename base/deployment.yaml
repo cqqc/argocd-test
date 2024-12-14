@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: argocd-test-app-deployment
 spec:
-  startegy:
+  strategy: # 올바른 필드
     type: RollingUpdate
   replicas: 3
   selector:
