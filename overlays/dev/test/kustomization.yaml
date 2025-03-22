@@ -3,10 +3,6 @@ kind: Kustomization
 
 namespace: argocd
 
-metadata:
-  labels:
-    app: argocd-test
-
 resources:
   - ../../../base
 

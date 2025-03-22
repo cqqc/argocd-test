@@ -3,10 +3,6 @@ kind: Kustomization
 
 namespace: argocd
 
-metadata:
-  labels:
-    app: hello-deploy
-
 resources:
   - ../../../base
 
