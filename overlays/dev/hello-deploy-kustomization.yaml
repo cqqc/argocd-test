@@ -11,7 +11,7 @@ resources:
   - ../../base
 
 patches:
-  - path: deployment.yaml
-  - path: service.yaml
+  - path: hello-deploy-deployment.yaml
+  - path: hello-deploy-service.yaml
 
 
