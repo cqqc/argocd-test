@@ -10,11 +10,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: argocd-test-app
+      app: argocd-test
   template:
     metadata:
       labels:
-        app: argocd-test-app
+        app: argocd-test
     spec:
       containers:
       - name: nginx
