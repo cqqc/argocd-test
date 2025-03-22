@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-deploy-deployment
+spec:
+  strategy: # 올바른 필드
+    type: RollingUpdate
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-deploy
+  template:
+    metadata:
+      labels:
+        app: hello-deploy
+    spec:
+      containers:
+        - name: cqqcsa
+          image: cqqcsa/workspace:latest
+          ports:
+            - containerPort: 28080
