@@ -10,4 +10,6 @@ patches:
   - path: deployment.yaml
   - path: service.yaml
 
+namePrefix: test-
+
 
