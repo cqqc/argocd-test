@@ -17,7 +17,7 @@ spec:
         app: hello-deploy
     spec:
       containers:
-        - name: cqqcsa
-          image: cqqcsa/workspace:latest
+        - name: hello-deploy
+          image: cqqcsa/test:latest
           ports:
             - containerPort: 28080
