@@ -5,13 +5,13 @@ namespace: argocd
 
 metadata:
   labels:
-    app: hello-deploy
+    app: argocd-test-app
 
 resources:
-  - ../../base
+  - ../../../base
 
 patches:
-  - path: hello-deploy-deployment.yaml
-  - path: hello-deploy-service.yaml
+  - path: deployment.yaml
+  - path: service.yaml
 
 
