@@ -20,4 +20,4 @@ spec:
         - name: hello-deploy
           image: cqqcsa/test:latest
           ports:
-            - containerPort: 28080
+            - containerPort: 8080
