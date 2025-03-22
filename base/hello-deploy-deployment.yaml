@@ -1,5 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
+metadata:
+  labels:
+    app: hello-deploy
 spec:
   strategy: # 올바른 필드
     type: RollingUpdate
