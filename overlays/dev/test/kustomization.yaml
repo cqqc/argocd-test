@@ -11,5 +11,7 @@ patches:
   - path: service.yaml
 
 namePrefix: test-
+commonLabels:
+  app: test-argocd
 
 
