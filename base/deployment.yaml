@@ -24,9 +24,9 @@ spec:
           volumeMounts:
             - name: config-volume
               mountPath: /config
-          env: # ✅ 여기 추가
+          env:
             - name: JAVA_OPTS
-              value: "--spring.config.location=/config/"
+              value: "--spring.config.additional-location=file:/config/"
       volumes:
         - name: config-volume
           configMap:
