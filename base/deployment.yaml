@@ -21,3 +21,13 @@ spec:
           image: cqqcsa/test:v1
           ports:
             - containerPort: 8080
+          volumeMounts:
+            - name: config-volume
+              mountPath: /config
+          env: # ✅ 여기 추가
+            - name: JAVA_OPTS
+              value: "--spring.config.location=/config/"
+      volumes:
+        - name: config-volume
+          configMap:
+            name: java-app-config  # 위에서 생성한 ConfigMap 이름
